@@ -8,9 +8,9 @@ EMAIL_PORT = 1025
 DATABASES = {
 	"default": {
 	"ENGINE": "django.db.backends.mysql",
-	"NAME": "twoscoops",
-	"USER": "",
-	"PASSWORD": "",
+	"NAME": "tictactoe",
+	"USER": "jsmith65",
+	"PASSWORD": "password",
 	"HOST": "localhost",
 	"PORT": "",
 	}
@@ -21,3 +21,5 @@ INTERNAL_IPS = ("127.0.0.1",)
 
 MIDDLEWARE_CLASSES += \
 ("debug_toolbar.middleware.DebugToolbarMiddleware", )
+
+TIME_ZONE = 'America/Chicago'
