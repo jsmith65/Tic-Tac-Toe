@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<script type="text/javascript" src="{% static "playTicTacToe.js"%}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static "styles.css"%}">
+	<title>Tic-Tac-Toe!</title>
+	<meta name="author" content="Jon Scott Smith">
+</head>
+<body>
+	<div class="center">
+		<div style="font-size: 125px;">Tic-Tac-Toe!</div>
+
+		<div id="boardSection">
+			<table>
+			<tbody>
+				<tr>
+					<td id="0,0" class="blankSquare"></td>
+					<td id="0,1" class="blankSquare"></td>
+					<td id="0,2" class="blankSquare"></td>
+				</tr>
+				<tr>
+					<td id="1,0" class="blankSquare"></td>
+					<td id="1,1" class="blankSquare"></td>
+					<td id="1,2" class="blankSquare"></td>
+				</tr>
+				<tr>
+					<td id="2,0" class="blankSquare"></td>
+					<td id="2,1" class="blankSquare"></td>
+					<td id="2,2" class="blankSquare"></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+
+		<div class="left" style="font-size: 40px;">You</div>
+		<div class="right" style="font-size: 40px;">Computer</div>
+		<div class="inlineCenter" style="font-size: 60px; font-weight: bolder;">Game Info</div>
+
+		<div class="left" style="font-size: 40px; border: none; margin-top: -20px;">
+			Walls: <span id="playerWalls">1</span><br>
+			<div style="width: 40%; border-bottom: 2px solid grey; margin:0 auto;">W-L</div>
+			<div><span id="playerWins">0</span>-<span id="playerLosses">0</span></div>
+		</div>
+
+		<div class="right" style="font-size: 40px; border: none; margin-top: -20px;">
+			Walls: <span id="computerWalls">1</span><br>
+			<div style="width: 40%; border-bottom: 2px solid grey; margin:0 auto;">W-L</div>
+			<div><span id="computerWins">0</span>-<span id="computerLosses">0</span></div>
+		</div>
+
+		<div class="inlineCenter" style="font-size: 50px; border: none;">
+			<span id="gameInfo">Loading...</span><br>
+			<span><button id="newGame">New Game</button></span><span><button id="resetWLRecord">Reset Scores</button></span>
+			<div style="font-size: 20px;">
+				Board Size: 
+				<select id="boardSizeChoice">
+					<option value="21">21x21</option>
+					<option value="19">19x19</option>
+					<option value="17">17x17</option>
+					<option value="15">15x15</option>
+					<option value="13">13x13</option>
+					<option value="11">11x11</option>
+					<option value="9" selected="selected">9x9</option>
+					<option value="7">7x7</option>
+					<option value="5">5x5</option>
+					<option value="3">3x3</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

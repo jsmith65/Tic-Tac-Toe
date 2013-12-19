@@ -1,0 +1,144 @@
+/* Containers */
+body
+{
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+div
+{
+	text-align:center;
+}
+
+div.left
+{
+	float: left;
+	width: 200px;
+	border-bottom: 4px solid rgb(0,0,255);
+}
+
+div.right
+{
+	float: right;
+	width: 200px;
+	border-bottom: 4px solid rgb(255,0,0);
+}
+
+div.inlineCenter
+{
+	margin:0 auto;
+	width: 400px;
+	border-bottom: 6px solid black;
+}
+
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:800px;
+}
+
+table
+{
+	margin: 0 auto;
+}
+
+td
+{
+	width: 70px;
+	height: 70px;
+	padding: 0px;
+}
+
+/* Board Elements */
+	/* Squares */
+td.blankSquare
+{
+	/*background-image: url("static/blank.gif");
+	background-size: 100%;*/
+	background-color: black;
+}
+
+td.RedSquare
+{
+	background-color: black;
+	background-image: url("static/red.gif");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+td.possibleRedSquare
+{
+	background-color: black;
+	background-image: url("static/redPossible.gif");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+td.BlueSquare
+{
+	background-color: black;
+	background-image: url("static/blue.gif");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+td.possibleBlueSquare
+{
+	background-color: black;
+	background-image: url("static/bluePossible.gif");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+	/* Walls */
+td.WallVertical
+{
+	width: 10px;
+	background-color: rgb(0,255,0);
+}
+
+td.possibleWallVertical
+{
+	width: 6px;
+	height: 66px;
+	border-spacing: collapse;
+	border: 2px solid rgb(0,255,0);
+}
+
+td.blankWallVertical
+{
+	width: 10px;
+}
+
+td.WallHorizontal
+{
+	height: 10px;
+	background-color: rgb(0,255,0);
+}
+
+td.possibleWallHorizontal
+{
+	width: 66px;
+	height: 6px;
+	border-spacing: collapse;
+	border: 2px solid rgb(0,255,0);
+}
+
+td.blankWallHorizontal
+{
+	height: 10px;
+}
+
+td.WallGap
+{
+	width: 10px;
+	height: 10px;
+	background-color: rgb(0,255,0);
+}
+
+td.blankWallGap
+{
+	width: 10px;
+	height: 10px;
+}
